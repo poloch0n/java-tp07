@@ -43,7 +43,7 @@ public class PizzaMemDao implements IPizzaDao {
 			//todo delete menu;
 			menu = null;
 		} else if(menu != null ) {
-			menu.remove(findPizzaByCode(codePizza));
+			menu.remove(menu.get(getIndexPizzaOnMenu(codePizza)));
 		}
 	}
 
